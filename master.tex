@@ -1,0 +1,18 @@
+\input{setup/preamble}
+
+\begin{document}
+% Formal stuff like the frontpage and titlepage
+\pagestyle{empty}
+\include{sections/formality/frontpage}
+\include{sections/formality/preface}
+\pdfbookmark[0]{\contentsname}{label:contents}
+\tableofcontents
+\clearpage
+\pagestyle{fancy}
+%
+% Content
+\include{sections/introduction}
+\include{sections/testsection}
+%
+\printbibliography[heading=bibintoc]
+\end{document}
